@@ -27,9 +27,9 @@ export const TopNumber = () => {
     }
   }, [playing, topNumber, currentValue, addToScore]);
 
-  // if (!user) {
-  //   return null;
-  // }
+  if (!user) {
+    return null;
+  }
 
   return (
     <Paper shadow="sm" radius="md" p="md" m="10" withBorder>

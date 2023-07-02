@@ -79,7 +79,7 @@ var Shell = ({ title, children }) => {
               }
             ),
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_core.Box, { sx: { flexGrow: 1 } }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_core.Box, { sx: { display: "flex" }, children: [
+            user && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_core.Box, { sx: { display: "flex" }, children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
                 import_core.Title,
                 {
@@ -96,7 +96,7 @@ var Shell = ({ title, children }) => {
               ),
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_core.Button, { variant: "light", onClick: () => setUser(null), children: "Logout" })
             ] }),
-            !user && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_core.Button, { variant: "light", onClick: () => setUser("Jack"), children: "Login" })
+            !user && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_core.Button, { variant: "light", onClick: () => setUser("Viet"), children: "Login" })
           ]
         }
       ),

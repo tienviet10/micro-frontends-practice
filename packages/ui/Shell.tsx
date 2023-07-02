@@ -46,7 +46,7 @@ export const Shell: React.FC<{
             {title}
           </Title>
           <Box sx={{ flexGrow: 1 }}></Box>
-          {
+          {user && (
             <Box sx={{ display: "flex" }}>
               <Title
                 mr="md"
@@ -60,9 +60,9 @@ export const Shell: React.FC<{
                 Logout
               </Button>
             </Box>
-          }
+          )}
           {!user && (
-            <Button variant="light" onClick={() => setUser("Jack")}>
+            <Button variant="light" onClick={() => setUser("Viet")}>
               Login
             </Button>
           )}
