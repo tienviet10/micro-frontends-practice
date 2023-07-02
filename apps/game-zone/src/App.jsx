@@ -2,6 +2,7 @@ import React from "react";
 
 import { Shell } from "ui";
 import { CardPicker } from "cardpicker/CardPicker";
+import { TopNumber } from "topnumber/TopNumber";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         }}
       >
         <CardPicker />
+        <TopNumber />
       </div>
     </Shell>
   );

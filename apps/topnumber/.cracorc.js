@@ -15,7 +15,7 @@ module.exports = () => ({
           name: "topnumber",
           filename: "remoteEntry.js",
           exposes: {
-
+            "./TopNumber": "./src/TopNumber",
           },
           shared: {
             ...deps,
