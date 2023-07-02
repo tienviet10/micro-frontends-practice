@@ -48,6 +48,8 @@ var import_jsx_runtime = require("react/jsx-runtime");
 var Shell = ({ title, children }) => {
   const { user, score, setUser } = useAppShell();
   const theme = (0, import_core.useMantineTheme)();
+  console.log("usq", user);
+  console.log("score", score);
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
     import_core.AppShell,
     {

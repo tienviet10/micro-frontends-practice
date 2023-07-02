@@ -16,7 +16,8 @@ export const Shell: React.FC<{
 }> = ({ title, children }) => {
   const { user, score, setUser } = useAppShell();
   const theme = useMantineTheme();
-
+  console.log("usq", user);
+  console.log("score", score);
   return (
     <AppShell
       padding="md"

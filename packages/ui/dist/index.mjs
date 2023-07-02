@@ -28,6 +28,8 @@ import { jsx, jsxs } from "react/jsx-runtime";
 var Shell = ({ title, children }) => {
   const { user, score, setUser } = useAppShell();
   const theme = useMantineTheme();
+  console.log("usq", user);
+  console.log("score", score);
   return /* @__PURE__ */ jsx(
     AppShell,
     {
