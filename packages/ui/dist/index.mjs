@@ -59,7 +59,7 @@ var Shell = ({ title, children }) => {
               }
             ),
             /* @__PURE__ */ jsx(Box, { sx: { flexGrow: 1 } }),
-            /* @__PURE__ */ jsxs(Box, { sx: { display: "flex" }, children: [
+            user && /* @__PURE__ */ jsxs(Box, { sx: { display: "flex" }, children: [
               /* @__PURE__ */ jsxs(
                 Title,
                 {
@@ -76,7 +76,7 @@ var Shell = ({ title, children }) => {
               ),
               /* @__PURE__ */ jsx(Button, { variant: "light", onClick: () => setUser(null), children: "Logout" })
             ] }),
-            !user && /* @__PURE__ */ jsx(Button, { variant: "light", onClick: () => setUser("Jack"), children: "Login" })
+            !user && /* @__PURE__ */ jsx(Button, { variant: "light", onClick: () => setUser("Viet"), children: "Login" })
           ]
         }
       ),

@@ -9,6 +9,9 @@ var CardPicker = () => {
   const [cards, setCards] = useState(shuffle(OPTIONS));
   const [played, setPlayed] = useState(null);
   const { addToScore, user } = useAppShell();
+  if (!user) {
+    return null;
+  }
   return /* @__PURE__ */ jsxs(Paper, { shadow: "sm", radius: "md", p: "md", m: "10", withBorder: true, children: [
     /* @__PURE__ */ jsx(Title, { children: "Card Picker!!!" }),
     /* @__PURE__ */ jsx(
@@ -83,6 +86,9 @@ var TopNumber = () => {
       return () => clearTimeout(timer);
     }
   }, [playing, topNumber, currentValue, addToScore]);
+  if (!user) {
+    return null;
+  }
   return /* @__PURE__ */ jsxs2(Paper2, { shadow: "sm", radius: "md", p: "md", m: "10", withBorder: true, children: [
     /* @__PURE__ */ jsx2(Title2, { children: "Top Number!!!" }),
     playing && /* @__PURE__ */ jsxs2(

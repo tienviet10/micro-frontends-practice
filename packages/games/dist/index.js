@@ -36,6 +36,9 @@ var CardPicker = () => {
   const [cards, setCards] = (0, import_react.useState)((0, import_lodash.shuffle)(OPTIONS));
   const [played, setPlayed] = (0, import_react.useState)(null);
   const { addToScore, user } = (0, import_ui.useAppShell)();
+  if (!user) {
+    return null;
+  }
   return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_core.Paper, { shadow: "sm", radius: "md", p: "md", m: "10", withBorder: true, children: [
     /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_core.Title, { children: "Card Picker!!!" }),
     /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
@@ -110,6 +113,9 @@ var TopNumber = () => {
       return () => clearTimeout(timer);
     }
   }, [playing, topNumber, currentValue, addToScore]);
+  if (!user) {
+    return null;
+  }
   return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(import_core2.Paper, { shadow: "sm", radius: "md", p: "md", m: "10", withBorder: true, children: [
     /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_core2.Title, { children: "Top Number!!!" }),
     playing && /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(
