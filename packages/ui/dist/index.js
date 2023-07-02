@@ -79,7 +79,7 @@ var Shell = ({ title, children }) => {
               }
             ),
             /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_core.Box, { sx: { flexGrow: 1 } }),
-            user && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_core.Box, { sx: { display: "flex" }, children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_core.Box, { sx: { display: "flex" }, children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
                 import_core.Title,
                 {

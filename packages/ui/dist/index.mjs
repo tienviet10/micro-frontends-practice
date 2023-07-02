@@ -59,7 +59,7 @@ var Shell = ({ title, children }) => {
               }
             ),
             /* @__PURE__ */ jsx(Box, { sx: { flexGrow: 1 } }),
-            user && /* @__PURE__ */ jsxs(Box, { sx: { display: "flex" }, children: [
+            /* @__PURE__ */ jsxs(Box, { sx: { display: "flex" }, children: [
               /* @__PURE__ */ jsxs(
                 Title,
                 {
